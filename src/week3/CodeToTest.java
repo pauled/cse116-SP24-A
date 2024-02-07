@@ -2,7 +2,7 @@ package week3;
 
 public class CodeToTest {
     public static int add(int a,int b){
-        return a+b;
+        return a+Math.abs(b);
     }
 
     public static void main(String[] args) {
