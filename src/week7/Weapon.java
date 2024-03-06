@@ -1,6 +1,5 @@
 package week7;
 
-import week4.Player;
 
 public class Weapon extends GameItem{
     private int damage;
@@ -15,6 +14,13 @@ public class Weapon extends GameItem{
         System.out.println(w1);
         HealthPotion hp1=new HealthPotion(4,5,6);
         System.out.println(hp1);
+        Player p1=new Player(10);
+        System.out.println(p1);
+        w1.use(p1);
+        p1.move(20,20);
+        w1.move(10,10);
+        System.out.println(p1);
+        System.out.println(w1);
     }
     @Override
     public String toString() {
