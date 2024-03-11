@@ -18,6 +18,14 @@ public class GameItem {
         return out;
     }
 
+    public double getxLoc() {
+        return xLoc;
+    }
+
+    public double getyLoc() {
+        return yLoc;
+    }
+
     public void move(double dx, double dy){
         this.xLoc+=dx;
         this.yLoc+=dy;
