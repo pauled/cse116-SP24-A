@@ -15,6 +15,17 @@ public class City {
         this.location = location;
     }
 
+    @Override
+    public String toString() {
+        return "City{" +
+                "name='" + name + '\'' +
+                ", country='" + country + '\'' +
+                ", region='" + region + '\'' +
+                ", population=" + population +
+                ", location=(" + location.getLatitude()+","+location.getLongitude() +
+                ")}";
+    }
+
     public String getName() {
         return this.name;
     }
