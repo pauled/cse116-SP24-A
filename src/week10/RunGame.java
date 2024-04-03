@@ -9,7 +9,7 @@ public class RunGame {
         System.out.println(gi1);
         Weapon w2=(Weapon) gi2;
         Object o1=w2;
-        GameItem gi3=new HealthPotion(4,5,6);
+        Usable gi3=new HealthPotion(4,5,6);
         //Weapon w3=(Weapon) gi3;
         System.out.println(gi3);
         w1.modify();
@@ -21,7 +21,7 @@ public class RunGame {
         p1.pickUpItem(w1);
         p1.pickUpItem(gi3);
         Player p2=new Player(20);
-        p2.pickUpItem(p1);
+        //p2.pickUpItem(p1);
         p2.move(2,3);
     }
 }

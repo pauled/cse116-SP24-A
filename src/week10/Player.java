@@ -6,7 +6,7 @@ public class Player extends GameItem {
     private int maxHP;
     private int HP;
     private int damageDealt;
-    private ArrayList<GameItem> inventory;
+    private ArrayList<Usable> inventory;
 
     public Player(int HP){
         super(0,0);
@@ -15,11 +15,11 @@ public class Player extends GameItem {
         this.damageDealt=5;
         this.inventory=new ArrayList<>();
     }
-    public void pickUpItem(GameItem item){
+    public void pickUpItem(Usable item){
         this.inventory.add(item);
     }
     public void useEntireInventory(){
-        for (GameItem g : this.inventory){
+        for (Usable g : this.inventory){
             g.use(this);
         }
     }
