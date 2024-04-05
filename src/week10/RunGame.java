@@ -5,8 +5,8 @@ public class RunGame {
         Weapon w1=new Weapon(1,2,3);
         GameItem gi1=new Weapon(1,2,3);
         GameItem gi2=w1;
-        System.out.println(w1);
-        System.out.println(gi1);
+        //System.out.println(w1);
+        //System.out.println(gi1);
         Weapon w2=(Weapon) gi2;
         Object o1=w2;
         Usable gi3=new HealthPotion(4,5,6);
