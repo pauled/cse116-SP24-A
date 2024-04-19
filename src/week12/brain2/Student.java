@@ -27,7 +27,7 @@ public class Student {
         carl.study();
         carl.getCloserToExam();
         carl.getCloserToExam();
-        carl.expressFeelings();
+        //carl.expressFeelings();
         carl.study();
         carl.expressFeelings();
         carl.passClass();
